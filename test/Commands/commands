@@ -1,0 +1,13 @@
+mvn clean test => it clears the previous build results and
+                 it will compile and runs all @Test classes in src/test/java
+                 and for running the full suite.
+
+mvn -version => to check the version of maven
+
+mvn -Dtest=LoginTest test => run a specific Test Class and LoginTest=class name(no .java)
+                            runs only LoginTest.java
+
+mvn -Dtest=LoginTest#loginTest test => run specific method in a Test Class
+                                        Format: ClassName#methodName
+
+mvn clean test -DxmlSuiteFile=testing.xml  => command used to run the testng.xml file as well as running parallel tests.
